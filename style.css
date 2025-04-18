@@ -1,16 +1,26 @@
+/* General styling */
 body {
   font-family: monospace;
   background: #111;
   color: #fff;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  overflow-x: hidden;
+  -webkit-user-select: none; /* prevent accidental text selection on touch */
+  touch-action: manipulation;
 }
 
+/* Responsive video */
 video {
-  width: 320px;
+  width: 90vw;
+  max-width: 400px;
   border: 2px solid #666;
-  margin: 10px 0;
+  margin: 10px auto;
+  display: block;
 }
 
+/* ASCII Output block */
 #asciiOutput {
   font-size: 8px;
   line-height: 6px;
@@ -18,4 +28,15 @@ video {
   text-align: left;
   white-space: pre;
   cursor: pointer;
+  user-select: none;
+  overflow: auto;
+  max-width: 100vw;
+  padding: 10px;
+}
+
+/* Optional: make spans tappable on mobile */
+#asciiOutput span {
+  display: inline-block;
+  padding: 1px;
+  touch-action: none;
 }

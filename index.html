@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Melodic Sonifier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Melodic Sonifier 🎵</h1>
-  <video id="video" autoplay></video>
+
+  <video id="video" autoplay playsinline></video>
+
+  <!-- Shown on desktop only -->
   <button id="capture">📷 Capture</button>
+
+  <!-- Audio unlock -->
   <button id="startAudio">🔊 Start Audio</button>
+
+  <!-- Hidden canvas for processing image data -->
   <canvas id="canvas" hidden></canvas>
+
+  <!-- ASCII art output -->
   <pre id="asciiOutput"></pre>
 
   <script src="script.js"></script>
