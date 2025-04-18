@@ -1,0 +1,21 @@
+body {
+  font-family: monospace;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+video {
+  width: 320px;
+  border: 2px solid #666;
+  margin: 10px 0;
+}
+
+#asciiOutput {
+  font-size: 8px;
+  line-height: 6px;
+  display: inline-block;
+  text-align: left;
+  white-space: pre;
+  cursor: pointer;
+}
